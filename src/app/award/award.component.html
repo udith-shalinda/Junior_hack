@@ -1,0 +1,23 @@
+<div id="awardpage" (click)="animate()" >
+  <div id="first"  >
+      <span fxFlex></span>
+      <div>
+        <img src="../../assets/Image/1.jpg" alt="" *ngIf="!bouncestatus" [@bounceInOnEnter]="bouncestatus" >
+        <p>LKR 10,000</p>
+      </div>
+    <span fxFlex></span>
+  </div>
+  <div>
+    <span fxFlex></span>
+      <div id="second" class="badge"  *ngIf="!bouncestatus">
+          <img src="../../assets/Image/2.jpg" alt="" [@bounceInOnEnter]="bouncestatus">
+          <p>LKR 5,000</p>
+        </div>
+        <span fxFlex></span>
+        <div id="third" class="badge" >
+          <img src="../../assets/Image/3.jpg" alt="" *ngIf="!bouncestatus" [@bounceInOnEnter]="bouncestatus">
+          <p>LKR 2,500</p>
+        </div>
+        <span fxFlex></span>
+  </div> 
+</div>

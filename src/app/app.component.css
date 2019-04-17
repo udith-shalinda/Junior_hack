@@ -1,0 +1,19 @@
+mat-sidenav-container{
+    height: 90vh;
+}
+mat-sidenav{
+    width:250px;
+}
+
+@media only screen and (min-width: 990px) {
+    #menuIcon{
+        display:none;
+    }
+    
+}
+@media only screen and (max-width: 990px) {
+    .toolbarbutton{
+        display:none;
+    }
+    
+}

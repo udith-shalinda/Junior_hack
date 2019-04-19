@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AwardComponent } from './award/award.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { EventComponent } from './timeline/event/event.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [{
   path:'',
@@ -19,6 +20,9 @@ const routes: Routes = [{
     path:'event',
     component:EventComponent
   }]
+},{
+  path:'contact',
+  component:ContactComponent
 }];
 
 @NgModule({

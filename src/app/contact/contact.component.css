@@ -1,0 +1,27 @@
+
+mat-card{
+    margin-left:10%;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top:50px;
+}
+h2{
+    text-align: center;
+}
+button{
+    width:25%;
+}
+input{
+    width:90%;
+}
+#contactUs{
+    /* margin-top:10%; */
+    padding-top:8%;
+}
+#body{
+    background-color: #FADBD8;
+    height: 100%;
+    margin-top:-20px;
+}

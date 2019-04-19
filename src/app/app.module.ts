@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatToolbarModule , MatButtonModule, MatIconModule, MatSidenavModule} from '@angular/material';
+import {MatToolbarModule , MatButtonModule, MatIconModule, MatSidenavModule, MatButtonToggleModule, MatCardModule, MatStepperModule} from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { AwardComponent } from './award/award.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { EventComponent } from './timeline/event/event.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     AppComponent,
     HomeComponent,
     AwardComponent,
-    TimelineComponent
+    TimelineComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,10 @@ import { TimelineComponent } from './timeline/timeline.component';
     MatButtonModule,
     MatIconModule,
     MatSidenavModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

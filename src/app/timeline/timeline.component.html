@@ -1,3 +1,21 @@
-<p>
-  timeline works!
-</p>
+<span fxFlex></span>
+<div>
+  <mat-button-toggle-group >
+    <mat-button-toggle routerLink="event" value="bold" >
+      <b>Monday</b>
+      13th of April
+    </mat-button-toggle>
+    <mat-button-toggle value="italic">
+      <b>Monday</b>
+      13th of April
+    </mat-button-toggle>
+    <mat-button-toggle value="underline">
+      <b>Monday</b>
+      13th of April
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+  
+  <router-outlet></router-outlet>
+</div>
+
+<span fxFlex></span>

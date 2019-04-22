@@ -28,7 +28,8 @@
             ],
             "scripts": [
               "./vanta/three.r92.min.js",
-              "./vanta/vanta.birds.min.js"
+              "./vanta/vanta.birds.min.js",
+              "./vanta/vanta.clouds.min.js"
             ],
             "es5BrowserSupport": true
           },

@@ -15,7 +15,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    VANTA.BIRDS({ el: "#homebackground"})
+    //VANTA.BIRDS({ el: "#homebackground"})
+    VANTA.CLOUDS({el:"#homebackground"})
   }
 
 }

@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatToolbarModule , MatButtonModule, MatIconModule, MatSidenavModule, MatButtonToggleModule, MatCardModule, MatStepperModule, MatInputModule} from '@angular/material';
+import {MatToolbarModule , MatButtonModule, MatIconModule, MatSidenavModule, MatButtonToggleModule, MatCardModule, MatStepperModule, MatInputModule, MatGridListModule} from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { AwardComponent } from './award/award.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { EventComponent } from './timeline/event/event.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactComponent } from './contact/contact.component';
     AwardComponent,
     TimelineComponent,
     EventComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { ContactComponent } from './contact/contact.component';
     MatButtonToggleModule,
     MatCardModule,
     MatStepperModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

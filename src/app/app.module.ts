@@ -13,6 +13,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { EventComponent } from './timeline/event/event.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     TimelineComponent,
     EventComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

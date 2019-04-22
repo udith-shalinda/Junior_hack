@@ -5,10 +5,11 @@ import { AwardComponent } from './award/award.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { EventComponent } from './timeline/event/event.component';
 import { ContactComponent } from './contact/contact.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [{
   path:'',
-  component:HomeComponent
+  component:MainPageComponent
 },
 {
   path:'award',

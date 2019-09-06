@@ -8,3 +8,15 @@
 #homebackground{
     height: 100vh;
 }
+
+#home{
+    background-image: url('https://cdn.dribbble.com/users/32512/screenshots/3032465/wave_motion_rokid_fantasy.gif');
+    /* background-image: url('http://i.stack.imgur.com/kx8MT.gif'); */
+    background-size: cover;
+    height: 100vh;
+}
+img{
+    /* color:red;
+    background: red; */
+    width:50%;
+}

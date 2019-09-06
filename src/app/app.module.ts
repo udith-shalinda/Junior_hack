@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { ScrollEventModule } from 'ngx-scroll-event';
+
 
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule , MatButtonModule, MatIconModule, MatSidenavModule, MatButtonToggleModule, MatCardModule, MatStepperModule, MatInputModule, MatGridListModule} from '@angular/material';
@@ -14,6 +16,7 @@ import { EventComponent } from './timeline/event/event.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 
 @NgModule({
@@ -25,13 +28,15 @@ import { MainPageComponent } from './main-page/main-page.component';
     EventComponent,
     ContactComponent,
     FooterComponent,
-    MainPageComponent
+    MainPageComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    ScrollEventModule,
 
     MatToolbarModule,
     MatButtonModule,

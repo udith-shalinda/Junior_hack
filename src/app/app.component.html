@@ -1,30 +1,50 @@
-<mat-toolbar color="primary">
-  <mat-icon color="default" (click)='sidenav.toggle()' id="menuIcon">menu</mat-icon>
-  <span>Junior Hack</span>
-  <span fxFlex></span>
-  <button mat-button class="toolbarbutton" routerLink="/" >Home</button>
-  <button mat-button class="toolbarbutton">About</button>
-  <button mat-button class="toolbarbutton" routerLink="/timeline">Timeline</button>
-  <button mat-button class="toolbarbutton" routerLink="/award">Awards</button>
-  <button mat-button class="toolbarbutton">Registration</button>
-  <button mat-button class="toolbarbutton" routerLink="/contact">Contact</button>
- 
-</mat-toolbar>
-<mat-sidenav-container class="example-container" >
-  
-    <mat-sidenav mode="push"  #sidenav id="sideNav">
-        <button mat-button routerLink="/" class="sideNavbutton">Home</button>
-        <button mat-button class="sideNavbutton">About</button>
-        <button mat-button routerLink="/timeline" class="sideNavbutton">Timeline</button>
-        <button mat-button routerLink="/award" class="sideNavbutton">Awards</button>
-        <button mat-button class="sideNavbutton">Registration</button>
-        <button mat-button routerLink="/contact" class="sideNavbutton">Contact</button>
-    </mat-sidenav>
+<!-- <div >
+    <mat-toolbar color="primary">
+      <mat-icon color="default" (click)='sidenav.toggle()' id="menuIcon">menu</mat-icon>
+      <span>Junior Hack</span>
+      <span fxFlex></span>
+      <button mat-button class="toolbarbutton" routerLink="/" >Home</button>
+      <button mat-button class="toolbarbutton">About</button>
+      <button mat-button class="toolbarbutton" routerLink="/timeline">Timeline</button>
+      <button mat-button class="toolbarbutton" routerLink="/award">Awards</button>
+      <button mat-button class="toolbarbutton">Registration</button>
+      <button mat-button class="toolbarbutton" routerLink="/contact">Contact</button>
+     
+    </mat-toolbar>
+    <mat-sidenav-container class="example-container" >
+      
+        <mat-sidenav mode="push"  #sidenav id="sideNav">
+            <button mat-button routerLink="/" class="sideNavbutton">Home</button>
+            <button mat-button class="sideNavbutton">About</button>
+            <button mat-button routerLink="/timeline" class="sideNavbutton">Timeline</button>
+            <button mat-button routerLink="/award" class="sideNavbutton">Awards</button>
+            <button mat-button class="sideNavbutton">Registration</button>
+            <button mat-button routerLink="/contact" class="sideNavbutton">Contact</button>
+        </mat-sidenav>
+    
+    
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+            <app-footer (onScroll)="handleScroll($event)" [bottomOffset]="1" [topOffset]="200" detect-scroll></app-footer>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
 
+</div>     -->
 
-    <mat-sidenav-content>
+<div (onScroll)="handleScroll($event)" [bottomOffset]="1" [topOffset]="200" detect-scroll>
+        <mat-toolbar color="primary">
+                <mat-icon color="default" (click)='sidenav.toggle()' id="menuIcon">menu</mat-icon>
+                <span>Junior Hack</span>
+                <span fxFlex></span>
+                <button mat-button class="toolbarbutton" routerLink="/" >Home</button>
+                <button mat-button class="toolbarbutton">About</button>
+                <button mat-button class="toolbarbutton" routerLink="/timeline">Timeline</button>
+                <button mat-button class="toolbarbutton" routerLink="/award">Awards</button>
+                <button mat-button class="toolbarbutton">Registration</button>
+                <button mat-button class="toolbarbutton" routerLink="/contact">Contact</button>
+               
+              </mat-toolbar>
+        <!-- <app-home></app-home> -->
         <router-outlet></router-outlet>
-        <app-footer></app-footer>
-    </mat-sidenav-content>
-</mat-sidenav-container>
 
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollEvent } from 'ngx-scroll-event';
 
 @Component({
   selector: 'app-main-page',
@@ -11,5 +12,5 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
 }

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ScrollEventModule } from 'ngx-scroll-event';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 
 import { ReactiveFormsModule } from '@angular/forms';
@@ -37,6 +38,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     BrowserAnimationsModule,
     ReactiveFormsModule,
     ScrollEventModule,
+    ScrollingModule,
 
     MatToolbarModule,
     MatButtonModule,
@@ -49,7 +51,9 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     MatInputModule,
     MatGridListModule
   ],
-  providers: [],
+  providers: [
+    // NavigationBarService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

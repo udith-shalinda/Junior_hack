@@ -31,20 +31,6 @@
 
 </div>     -->
 
-<div (onScroll)="handleScroll($event)" [bottomOffset]="1" [topOffset]="200" detect-scroll>
-        <mat-toolbar color="primary">
-                <mat-icon color="default" (click)='sidenav.toggle()' id="menuIcon">menu</mat-icon>
-                <span>Junior Hack</span>
-                <span fxFlex></span>
-                <button mat-button class="toolbarbutton" routerLink="/" >Home</button>
-                <button mat-button class="toolbarbutton">About</button>
-                <button mat-button class="toolbarbutton" routerLink="/timeline">Timeline</button>
-                <button mat-button class="toolbarbutton" routerLink="/award">Awards</button>
-                <button mat-button class="toolbarbutton">Registration</button>
-                <button mat-button class="toolbarbutton" routerLink="/contact">Contact</button>
-               
-              </mat-toolbar>
-        <!-- <app-home></app-home> -->
+<div >
         <router-outlet></router-outlet>
-
 </div>
